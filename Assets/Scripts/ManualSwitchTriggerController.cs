@@ -4,6 +4,7 @@ using System.Collections;
 public class ManualSwitchTriggerController : MonoBehaviour {
 	// Here I have a reference to the ScitchController so that I can enable/disable the switch
 	public SwitchController theSwitch;
+    public BulbController theBulb;
 
 	void OnTriggerEnter2D(Collider2D other) {
 		Debug.Log ("Someone entered the switch trigger");
