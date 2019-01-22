@@ -6,13 +6,25 @@ public class InputManager : MonoBehaviour {
 	// a little out of hand now. This is the 3rd script that has a reference to the Switch.
 	// What's going to happen when we have multiple Switches and Doors etc.....
 	public SwitchController theSwitch;
+    public BulbController theBulb;
 
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.Space) == true) {
 			if (theSwitch != null) {
 				theSwitch.toggleSwitch ();
+
+                if (theBulb.BulbOn == true)
+                {
+                    theBulb.turnOff();
+                }
+
 			}
+
+            else
+            {
+                theBulb.turnOn();
+            }
 		}
 	}
 }

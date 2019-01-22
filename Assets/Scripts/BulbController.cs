@@ -5,14 +5,24 @@ using UnityEngine;
 public class BulbController : MonoBehaviour {
 
     private Animator LightAnimator;
-    private bool BulbOff = true; 
+    public bool BulbOn;
+
 
      
    
 
 
+    public void turnOn()
+    {
+        LightAnimator.SetBool("On", true);
+        BulbOn = true;
+    }
 
-
+    public void turnOff()
+    {
+        LightAnimator.SetBool("On", false);
+        BulbOn = false;
+    }
     private void Awake()
     {
         LightAnimator = gameObject.GetComponent<Animator>();
