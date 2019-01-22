@@ -182,6 +182,11 @@ Prefab:
       propertyPath: maxHorixontalSpeed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012095757710, guid: 2d2bd5501100bf648ac0b2375f6ec0b3,
+        type: 2}
+      propertyPath: theBulb
+      value: 
+      objectReference: {fileID: 502270939}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d2bd5501100bf648ac0b2375f6ec0b3, type: 2}
   m_IsPrefabAsset: 0
